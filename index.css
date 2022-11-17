@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("bg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.body{
+    background: url("bg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 80px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 20px;
+    font-size: 39px;
+    font-weight: bold;
+    /* margin-left: 85px; */
+    font-family: 'New Tegomin', serif;
+}
+
+#board{
+    background: linear-gradient(blue
+,yellow);
+    width: 90vmin;
+    height: 92vmin;
+    /* margin-left: 400px; */
+    margin-right: 100px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+h1{
+    margin-right: 40px;
+    font-family: 'New Tegomin', serif;
+}
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+#left{
+    margin-right: 20px;
+}
+#up{
+    margin-left: 25px;
+    
+}
+#down{
+    margin-left: 25px;
+
+}
+.buttons button{
+    background-color: greenyellow;
+    cursor: pointer;
+
+}
+
+
+.snake{
+    background-color: green;
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
+
+.food{
+    background: red;
+    border: .25vmin solid black;
+    border-radius: 88px;
+}
+.buttons button img{
+    width: 23px;
+    height: 23px;
+}
+@media only screen and (max-width: 500px) {
+    .body {
+      display: flex;
+      /* background: url("up.jpg"); */
+      flex-direction: column;
+      /* background-size: cover; */
+    }
+  .buttons{
+    display: flex;
+    /* overflow-y: hidden; */
+    flex-direction: column;
+}            
+#right{
+    width: 90px;
+    /* margin-top: 65px; */
+    margin-right: 140px;
+    margin-left: 100px;
+}              
+#left{
+    overflow: hidden;
+    width: 90px;
+    /* height: 70px; */
+    /* margin-right: 400px; */
+    margin-left: 100px;
+}
+#down{
+    width: 90px;
+    margin:5px ;
+    margin-top: 0px;
+    margin-left: 200px;
+}
+#up{
+    margin-top: 100px;
+    width: 90px;
+    margin-left: 200px;
+}
+.rightAndLeft{
+    display: flex;
+}
+#board{
+    height: 100vmin;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+#scoreBox{
+    margin-top: 80px;
+
+}
+#hiscoreBox{
+    margin-top: 60px;
+    margin-left: 40px;
+}
+}
